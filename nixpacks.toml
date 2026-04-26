@@ -1,0 +1,4 @@
+# Force Railway/Nixpacks to build with Node.js 20 (needed by @kelvdra/baileys
+# and its deps like lru-cache@11 / music-metadata@11 which require Node >=20).
+[phases.setup]
+nixPkgs = ["nodejs_20"]
